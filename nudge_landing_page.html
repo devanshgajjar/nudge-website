@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nudge Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #F8F5EE;
+      color: #2B2B2B;
+      overflow-x: hidden;
+    }
+
+    .serif {
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .grain {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.03;
+      background-image:
+        radial-gradient(#000 0.5px, transparent 0.5px);
+      background-size: 8px 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grain"></div>
+
+  <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-[#E7E1D6] blur-3xl rounded-full opacity-40"></div>
+  <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#DCE6D8] blur-3xl rounded-full opacity-40"></div>
+
+  <!-- NAV -->
+  <nav class="relative z-10 flex items-center justify-between px-6 md:px-16 py-8">
+    <div class="text-3xl serif font-semibold tracking-tight">
+      nudge.
+    </div>
+
+    <div class="hidden md:flex items-center gap-8 text-[15px] text-[#5F5A53]">
+      <a href="#how">How it works</a>
+      <a href="#why">Why it works</a>
+      <a href="#faq">FAQ</a>
+    </div>
+
+    <button class="bg-[#DCE6D8] hover:bg-[#D4E0D0] transition-colors px-5 py-3 rounded-full text-sm shadow-sm">
+      Try it free
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="relative z-10 px-6 md:px-16 pt-12 md:pt-24 pb-24">
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+
+      <div>
+        <div class="inline-flex items-center gap-2 bg-[#EFE9DE] border border-[#E5DDD0] px-4 py-2 rounded-full text-sm text-[#6A655D] mb-8 shadow-sm">
+          built for overwhelmed minds
+        </div>
+
+        <h1 class="serif text-6xl md:text-8xl leading-[0.95] tracking-[-0.04em] text-[#2F2D2A]">
+          Your tasks should
+          <br />
+          come looking for you.
+        </h1>
+
+        <p class="mt-8 text-lg md:text-xl leading-[1.9] text-[#625D57] max-w-2xl font-light">
+          A gentle reminder system for people who forget to open productivity apps.
+          Your tasks reach you through calls, messages, WhatsApp, Telegram, and email — quietly following you wherever your attention already lives.
+        </p>
+
+        <div class="mt-10 flex flex-wrap gap-4">
+          <button class="bg-[#2E2C29] text-[#F8F5EE] px-8 py-4 rounded-full text-[15px] shadow-lg">
+            Start getting nudged
+          </button>
+
+          <button class="bg-white/70 border border-[#E8E0D3] px-8 py-4 rounded-full text-[15px] text-[#5F5A53] shadow-sm">
+            Watch how it works
+          </button>
+        </div>
+
+        <div class="mt-12 flex flex-wrap gap-3 text-sm text-[#6B655D]">
+          <div class="bg-white/60 border border-[#EAE2D7] px-4 py-2 rounded-full shadow-sm">
+            voice input
+          </div>
+
+          <div class="bg-white/60 border border-[#EAE2D7] px-4 py-2 rounded-full shadow-sm">
+            gentle nudges
+          </div>
+
+          <div class="bg-white/60 border border-[#EAE2D7] px-4 py-2 rounded-full shadow-sm">
+            repeated reminder calls
+          </div>
+
+          <div class="bg-white/60 border border-[#EAE2D7] px-4 py-2 rounded-full shadow-sm">
+            ADHD-friendly
+          </div>
+        </div>
+      </div>
+
+      <!-- VISUAL -->
+      <div class="relative flex justify-center">
+        <div class="relative w-full max-w-[520px]">
+
+          <div class="bg-[#FFFDF9] border border-[#E8E0D5] rounded-[38px] p-8 shadow-[0_20px_60px_rgba(0,0,0,0.06)] rotate-[-2deg]">
+
+            <div class="text-sm text-[#A39B92] mb-5">today</div>
+
+            <div class="space-y-4">
+              <div class="bg-[#F4EFE5] rounded-3xl p-5">
+                <div class="text-sm text-[#8A847B]">incoming reminder</div>
+
+                <div class="mt-2 text-3xl leading-snug serif">
+                  hey, did you finally send that proposal?
+                </div>
+              </div>
+
+              <div class="bg-[#EEF3EA] rounded-3xl p-5 ml-8">
+                <div class="text-sm text-[#8A847B]">WhatsApp</div>
+
+                <div class="mt-2 text-lg leading-relaxed text-[#494640]">
+                  you said you'd call mom after lunch.
+                </div>
+              </div>
+
+              <div class="bg-[#F8F5EE] border border-[#E8E0D5] rounded-3xl p-5 mr-6">
+                <div class="text-sm text-[#8A847B]">voice input</div>
+
+                <div class="mt-2 italic text-[#4B4843] leading-relaxed">
+                  “remind me to finish the deck by 4 and call Riya later tonight.”
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="absolute -bottom-10 -left-6 bg-white/80 border border-[#E7DED1] rounded-[28px] px-6 py-5 shadow-xl">
+            <div class="text-sm text-[#9A9288]">completed today</div>
+
+            <div class="text-5xl mt-1 serif">
+              17 things.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section id="why" class="px-6 md:px-16 py-28 border-t border-[#EAE2D7]">
+    <div class="max-w-5xl mx-auto text-center">
+
+      <div class="text-[#8A847B] uppercase tracking-[0.25em] text-xs">
+        why this feels calming
+      </div>
+
+      <h2 class="mt-8 text-5xl md:text-7xl leading-[1.15] serif text-[#2F2D2A]">
+        Most productivity apps are built like control panels.
+      </h2>
+
+      <p class="mt-10 text-xl leading-[2] text-[#625D57] font-light max-w-4xl mx-auto">
+        Bright colors. Aggressive dashboards. Endless widgets.
+        They demand attention instead of reducing mental load.
+      </p>
+
+      <p class="mt-6 text-xl leading-[2] text-[#625D57] font-light max-w-4xl mx-auto">
+        This is intentionally softer. Warm neutrals calm the nervous system.
+        Rounded layouts reduce visual tension. Serif typography slows reading slightly,
+        improving emotional comfort and retention.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- HOW -->
+  <section id="how" class="px-6 md:px-16 py-28 bg-[#F5F1E8]/70 border-y border-[#EAE2D7]">
+    <div class="max-w-6xl mx-auto">
+
+      <div class="text-center">
+        <div class="text-[#8A847B] uppercase tracking-[0.25em] text-xs">
+          how it works
+        </div>
+
+        <h2 class="mt-6 text-6xl serif leading-tight">
+          gentle systems for distracted minds.
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 mt-20">
+
+        <div class="bg-[#FFFDF9] border border-[#E7DED1] rounded-[34px] p-10 shadow-sm">
+          <div class="text-[#A59D93] text-sm mb-5">01</div>
+          <h3 class="text-4xl serif">talk naturally</h3>
+          <p class="mt-5 text-[#625D57] leading-[1.9] text-lg font-light">
+            Just say what you need to do. No formatting. No complicated setup.
+          </p>
+        </div>
+
+        <div class="bg-[#FFFDF9] border border-[#E7DED1] rounded-[34px] p-10 shadow-sm">
+          <div class="text-[#A59D93] text-sm mb-5">02</div>
+          <h3 class="text-4xl serif">choose urgency</h3>
+          <p class="mt-5 text-[#625D57] leading-[1.9] text-lg font-light">
+            Some tasks need a soft nudge. Some deserve repeated calls.
+          </p>
+        </div>
+
+        <div class="bg-[#FFFDF9] border border-[#E7DED1] rounded-[34px] p-10 shadow-sm">
+          <div class="text-[#A59D93] text-sm mb-5">03</div>
+          <h3 class="text-4xl serif">receive reminders where you already are</h3>
+          <p class="mt-5 text-[#625D57] leading-[1.9] text-lg font-light">
+            Messages, WhatsApp, Telegram, email, or calls — whatever reaches you best.
+          </p>
+        </div>
+
+        <div class="bg-[#FFFDF9] border border-[#E7DED1] rounded-[34px] p-10 shadow-sm">
+          <div class="text-[#A59D93] text-sm mb-5">04</div>
+          <h3 class="text-4xl serif">reply and move on</h3>
+          <p class="mt-5 text-[#625D57] leading-[1.9] text-lg font-light">
+            Just say “done.” No need to reopen the app again and again.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="px-6 md:px-16 py-32 text-center">
+    <div class="max-w-4xl mx-auto">
+
+      <h2 class="text-6xl md:text-8xl leading-[1.05] serif text-[#2F2D2A]">
+        stop trying to remember everything.
+      </h2>
+
+      <p class="mt-8 text-xl leading-[2] text-[#625D57] max-w-2xl mx-auto font-light">
+        Let your tasks quietly follow you instead.
+      </p>
+
+      <button class="mt-12 bg-[#2F2D2A] text-[#F8F5EE] px-10 py-5 rounded-full text-lg shadow-xl">
+        Start getting nudged
+      </button>
+
+    </div>
+  </section>
+
+</body>
+</html>
